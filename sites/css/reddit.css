@@ -1,0 +1,135 @@
+/* ----- Catppuccin Colours ----- */
+
+
+:root {
+
+	/* ----- rainbow ----- */
+
+	/*				 H	 S	 L */
+	--rosewater_hsl:  10,  56%,  91%;
+	--flamingo_hsl:	0,  59%,  88%;
+	--mauve_hsl:	 279,  70%,  83%;
+	--pink_hsl:	  316,  72%,  86%;
+	--maroon_hsl:	349,  60%,  77%;
+	--red_hsl:	   342,  79%,  75%;
+	--peach_hsl:	  24,  88%,  78%;
+	--yellow_hsl:	 41,  88%,  84%;
+	--green_hsl:	 128,  58%,  79%;
+	--teal_hsl:	  171,  53%,  81%;
+	--blue_hsl:	  207,  93%,  79%;
+	--sky_hsl:	   189,  71%,  73%;
+	--lavender_hsl:  238, 100%,  89%;
+
+
+
+	/* ----- black & white ----- */
+
+	/*				 H	 S	 L */
+	--black0_hsl:	254,  25%,  10%;
+	--black1_hsl:	249,  23%,  12%;
+	--black2_hsl:	240,  21%,  15%;
+	--black3_hsl:	249,  18%,  22%;
+	--black4_hsl:	254,  12%,  36%;
+	--gray0_hsl:	 247,   8%,  46%;
+	--gray1_hsl:	 274,  11%,  59%;
+	--gray2_hsl:	 285,  10%,  75%;
+	--white_hsl:	 220,  38%,  89%;
+
+
+
+	/* ----- variables ----- */
+
+	--rosewater:	 hsl(var(--rosewater_hsl));
+	--flamingo:	  hsl(var(--flamingo_hsl));
+	--mauve:		 hsl(var(--mauve_hsl));
+	--pink:		  hsl(var(--pink_hsl));
+	--maroon:		hsl(var(--maroon_hsl));
+	--red:		   hsl(var(--red_hsl));
+	--peach:		 hsl(var(--peach_hsl));
+	--yellow:		hsl(var(--yellow_hsl));
+	--green:		 hsl(var(--green_hsl));
+	--teal:		  hsl(var(--teal_hsl));
+	--blue:		  hsl(var(--blue_hsl));
+	--sky:		   hsl(var(--sky_hsl));
+	--lavender:	  hsl(var(--lavender_hsl));
+	--black0:		hsl(var(--black0_hsl));
+	--black1:		hsl(var(--black1_hsl));
+	--black2:		hsl(var(--black2_hsl));
+	--black3:		hsl(var(--black3_hsl));
+	--black4:		hsl(var(--black4_hsl));
+	--gray0:		 hsl(var(--gray0_hsl));
+	--gray1:		 hsl(var(--gray1_hsl));
+	--gray2:		 hsl(var(--gray2_hsl));
+	--white:		 hsl(var(--white_hsl));
+
+}
+
+* {
+	font-family: VictorMono NF;
+	user-select: none;
+}
+
+*::before {
+    font-style: normal;
+    font-size: 28px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 220px);
+	grid-auto-rows: 36px;
+}
+
+body {
+	background-color: var(--black2);
+	color: var(--white);
+}
+
+h1 {
+	color: var(--sky);
+}
+
+a {
+	position: relative;
+	color: var(--flamingo);
+	text-align: left;
+    text-decoration: none;
+	font-size: 20px;
+	transition: 500ms;
+	margin: 0px 12px;
+}
+
+a:link {
+	border-bottom: var(--flamingo) 1px solid;
+}
+
+a:hover {
+	transition: 500ms;
+	color: var(--pink);
+}
+
+ul {
+	list-style-type: none;
+}
+
+span {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.backButton {
+	transition: 500ms;
+	color: var(--yellow);
+}
+
+.backButton:hover {
+	transition: 500ms;
+	color: var(--white)
+}
+
+.github:before { content: "\f113" }
+.reddit:before { content: "\f281" }
+.twitch:before { content: "\fa42" }
+.wanty:before { content: "\fa9e" }
